@@ -1,0 +1,6 @@
+{
+  "name": "Phethagatsa Organics | South African Wellness & Cosmetics",
+  "description": "Pure South African wellness cosmetics, organic superfoods, collagen peptides, and targeted skincare routines crafted with botanical ingredients and instant door-to-door delivery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

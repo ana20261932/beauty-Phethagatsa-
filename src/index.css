@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-sage-50: #f4f7f5;
+    --color-sage-100: #e5ede7;
+    --color-sage-200: #cbded0;
+    --color-sage-300: #a7c5b0;
+    --color-sage-400: #7ea88a;
+    --color-sage-500: #5c8b6a;
+    --color-sage-600: #467052;
+    --color-sage-700: #385942;
+    --color-sage-800: #2f4836;
+    --color-sage-900: #273c2e;
+    --color-sage-950: #14221a;
+
+    --color-earth-gold: #c5a059;
+    --color-earth-bronze: #8f6e2b;
+    --color-warm-cream: #faf8f5;
+    --color-warm-sand: #f3efe6;
+  }
+
+  /* Body strictly uses 'Plus Jakarta Sans' for premium organic wellness feel */
+  html,
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #faf8f5;
+    color: #1a251e;
+  }
+
+  /* Strictly enforce 'Playfair Display' for all h1, h2, h3 headers */
+  h1,
+  h2,
+  h3 {
+    font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif !important;
+    letter-spacing: -0.02em;
+    font-feature-settings: 'lnum' 1, 'pnum' 1;
+  }
+
+  /* Support for h4-h6 and font-display/serif utilities */
+  h4,
+  h5,
+  h6,
+  .font-display,
+  .font-serif {
+    font-family: 'Playfair Display', Georgia, Cambria, 'Times New Roman', Times, serif !important;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Custom Wellness & Botanical Utility Helpers */
+.bg-sage-dark {
+  background-color: #1f3d2e;
+}
+
+.text-gold-accent {
+  color: #c5a059;
+}
+
+.border-gold-accent {
+  border-color: #c5a059;
+}
+
+/* Tactile Product Image Hover Zoom & Elevation for ProductGrid */
+.product-grid-container .product-card-root {
+  transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.35s ease;
+}
+
+.product-grid-container .product-card-root:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 35px -10px rgba(20, 34, 26, 0.12), 0 6px 14px -3px rgba(20, 34, 26, 0.05);
+  border-color: rgba(92, 139, 106, 0.45);
+}
+
+.product-grid-container .product-card-image,
+.product-card-root:hover .product-card-image,
+.group:hover .product-card-image {
+  transform: scale(1.08);
+}
+
